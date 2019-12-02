@@ -57,7 +57,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Para adoptar"
+            android:text="  Adoptar"
             android:layout_marginLeft="70dp"
             android:layout_marginRight="60dp"
             android:textColor="@color/negro"
@@ -67,7 +67,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Perdido"
+            android:text="      Perdido"
             android:textColor="@color/negro"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -104,7 +104,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:gravity="center_horizontal"
         android:text="Alojas un perrito/gatito"
         android:textColor="@color/negro"
@@ -116,14 +116,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="30dp">
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="55dp"
+
+        >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="65dp"
             android:layout_marginRight="52dp"
-            android:text="Para adopción"
+            android:text="Dar en adopción"
             android:textColor="@color/negro"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -134,7 +138,9 @@
             android:text="Perdido"
             android:textColor="@color/negro"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+
+            />
 
     </LinearLayout>
     <LinearLayout

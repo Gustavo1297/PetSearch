@@ -26,11 +26,13 @@ public class Login extends AppCompatActivity {
         textRegistro = (TextView) findViewById(R.id.textRegistro);
         }
         public void RegistroUsuario(View view){
-            Intent registrousuario = new Intent(this, );
+            Intent registrousuario = new Intent(this, RegistoUsuario.class);
+            startActivity(registrousuario);
 
         }
     public void Login(View view){
-
+        Intent intentmenu = new Intent(this, Menu.class);
+        startActivity(intentmenu);
     }
 
 
