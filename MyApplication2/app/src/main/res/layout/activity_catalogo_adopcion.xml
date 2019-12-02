@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CatalogoAdopcion"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+
+    >
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/paraAdoptar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/perrogato2" />
+
+    <TextView
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="Perritos/gatitos en adopción"
+        android:textColor="@color/negro"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+       />
+
+    <TextView
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="Aquí podrás encontrar a tu futura mascota"
+        android:textColor="@color/negro"
+        android:textSize="15dp"
+        />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="30dp">
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      >
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/dog"
+        android:scaleType="fitCenter"
+        android:id="@+id/ejemploAdopcion"
+        android:layout_weight="1"/>
+
+  </LinearLayout>
+  </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="Nombre: "/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="Nombre: "/>
+
+</LinearLayout>

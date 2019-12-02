@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_registra_mascota">RegistraMascota</string>
+    <string name="title_activity_catalogo_adopcion">CatalogoAdopcion</string>
+</resources>

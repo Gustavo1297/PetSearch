@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistraMascota"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    >
+
+    <TextView
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="Registra al perrito/gatito"
+        android:textColor="@color/negro"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="Si encontraste y alojas a una mascota que es de alguien más, o si quieres anunciar a un perrito/gatito en adopción "
+        android:textColor="@color/negro"
+        android:textSize="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre mascota:"
+        android:textSize="15dp"
+        android:textColor="@color/negro"
+        android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/nombreMascota"
+            android:layout_width="250dp"
+            android:hint="Si tiene nombre"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        >
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/negro"
+        android:text="Es un"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+     <ToggleButton
+        android:id="@+id/esUnPerroGato"
+        android:layout_width="150dp"
+        android:layout_marginLeft="50dp"
+        android:layout_height="30dp"
+        android:text="ToggleButton"
+        android:textOn="Gato"
+        android:textOff="Perro"
+        android:background="@color/verde"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/negro"
+                android:text="Está  "
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+            <ToggleButton
+                android:id="@+id/estadoPerdidoAdopcion"
+                android:textOn="Perdido"
+                android:textOff="En Adopción"
+                android:background="@color/azul"
+                android:layout_width="150dp"
+                android:layout_marginLeft="50dp"
+                android:layout_height="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro"
+            android:text="Raza: "
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/raza"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro"
+            android:text="Edad: "
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <SeekBar
+            android:id="@+id/seekBarEdad"
+            style="@style/Widget.AppCompat.SeekBar"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:max="20"
+            android:progress="0"
+            android:text="Años" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro"
+            android:text="Subir foto"
+
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+
+        <ImageButton
+            android:layout_width="86dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/camara"/>
+
+        <TextView
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:text="Subir ladrido/maullido"
+            android:textColor="@color/negro"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:layout_width="86dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/grabar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:text="Galería"
+            android:textColor="@color/negro"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    <ImageButton
+        android:layout_width="86dp"
+        android:layout_height="40dp"
+
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/galeriaIMG" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro"
+            android:text="Se aloja con:"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/dueño"
+            android:hint="Tu nombre"
+            android:layout_width="286dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro"
+            android:text="Email:"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="331dp"
+            android:hint="Tu email"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="222dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/rojo"
+        android:text="Registrar" />
+
+
+</LinearLayout>

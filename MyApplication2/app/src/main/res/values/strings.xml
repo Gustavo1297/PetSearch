@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_registra_mascota">RegistraMascota</string>
+    <string name="title_activity_catalogo_adopcion">CatalogoAdopcion</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_menu">Menu</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string-array name="opciones">
+        <item>Ver Historial</item>
+        <item>Perdidos</item>
+        <item>En adopcion</item>
+    </string-array>
+
+
+</resources>
