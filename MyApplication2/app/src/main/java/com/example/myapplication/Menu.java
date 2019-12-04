@@ -34,4 +34,16 @@ public class Menu extends AppCompatActivity {
         Intent intent = new Intent(this, Menu.class);
         startActivity(intent);
     }
+    public void AdoptarMacosta(View view){
+        Intent intent = new Intent(this, CatalogoAdopcion.class);
+        startActivity(intent);
+    }
+    public void ReportarMascota(View view){
+
+    }
+    public  void RegistroMascota(View view){
+        Intent intent = new Intent(this, RegistraMascota.class);
+        startActivity(intent);
+    }
+
 }

@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:id="@+id/irPerfil"
-        android:onClick="irPerfil"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="0dp"
@@ -18,6 +18,7 @@
         android:layout_marginTop="30dp">
     <ImageButton
         android:layout_width="50dp"
+        android:onClick="irPerfil"
         android:layout_height="50dp"
         android:layout_marginLeft="10dp"
         android:background="@android:color/transparent"
@@ -40,7 +41,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:gravity="center_horizontal"
         android:text="Buscas un perrito/gatito"
         android:textColor="@color/negro"
@@ -52,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="20dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -87,7 +88,9 @@
             android:layout_marginRight="70dp"
             android:background="@android:color/transparent"
             android:scaleType="fitCenter"
-            android:src="@drawable/perrogatoimg" />
+            android:src="@drawable/perrogatoimg"
+            android:onClick="AdoptarMacosta"
+            />
 
 
         <ImageButton
@@ -106,19 +109,20 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:gravity="center_horizontal"
-        android:text="Alojas un perrito/gatito"
+        android:text="Registrar para:"
         android:textColor="@color/negro"
         android:textSize="28dp"
         android:textStyle="bold" />
 
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="375dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
         android:layout_marginRight="55dp"
+        android:orientation="horizontal"
 
         >
 
@@ -127,7 +131,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="65dp"
             android:layout_marginRight="52dp"
-            android:text="Dar en adopción"
+            android:text="Adopcion      "
             android:textColor="@color/negro"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -135,7 +139,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Perdido"
+            android:text="Perdida"
             android:textColor="@color/negro"
             android:textSize="20dp"
             android:textStyle="bold"
@@ -151,12 +155,12 @@
         android:layout_marginTop="10dp">
 
         <ImageButton
-            android:id="@+id/enAdopcion"
+            android:id="@+id/btn_reg_adopcion"
             android:layout_width="102dp"
             android:layout_height="102dp"
             android:layout_marginRight="60dp"
             android:background="@android:color/transparent"
-
+            android:onClick="RegistroMascota"
             android:gravity="center_vertical"
             android:scaleType="fitCenter"
             android:src="@drawable/perrogato3" />
@@ -164,12 +168,14 @@
 
         <ImageButton
             android:gravity="center_vertical"
-            android:id="@+id/alojarPerdido"
+            android:id="@+id/btn_reg_perdido"
             android:layout_width="102dp"
             android:layout_height="102dp"
             android:background="@android:color/transparent"
             android:scaleType="fitCenter"
-            android:src="@drawable/perdio" />
+            android:src="@drawable/perdio"
+            android:onClick="RegistroMascota"
+            />
 
 
     </LinearLayout>

@@ -9,65 +9,43 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:onClick="@+id/irMenu"
-        android:id="@+id/btnRegresar"
-        android:layout_width="130dp"
-        android:layout_height="44dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp">
-
-        <ImageButton
-            android:layout_width="35dp"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            android:scaleType="fitCenter"
-            android:src="@drawable/regresar" />
-
-        <TextView
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="10dp"
-            android:layout_weight="4"
-            android:onClick="cerrarSesion"
-            android:text="Regresar al menú"
-            android:textColor="@color/negro"
-            android:textSize="18dp" />
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="46dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp">
-
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="68dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp">
+            android:layout_marginLeft="10dp"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            >
+            <ImageButton
+                android:id="@+id/btnRegresar"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/regresar" />
 
             <TextView
-                android:layout_width="200dp"
+                android:layout_width="130dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Usuario" />
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="4"
+                android:onClick="cerrarSesion"
+                android:text="Regresar al menú"
+                android:textColor="@color/negro"
+                android:textSize="18dp" />
+
         </LinearLayout>
-
         <LinearLayout
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
 
-        </LinearLayout>
+            android:layout_marginLeft="90dp"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
 
-
-        <LinearLayout
-            android:layout_width="130dp"
-            android:layout_height="44dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="0dp">
+            >
 
             <ImageButton
                 android:id="@+id/btnCerrarSesion"
@@ -75,8 +53,8 @@
                 android:layout_height="wrap_content"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/salir" />
-
+                android:src="@drawable/salir"
+                />
             <TextView
                 android:layout_width="68dp"
                 android:layout_height="wrap_content"
@@ -90,42 +68,51 @@
         </LinearLayout>
     </LinearLayout>
 
+    <TextView
 
-    <LinearLayout
-        android:id="@+id/cerrarSesion"
-        android:layout_width="200dp"
-        android:layout_height="29dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp">
+        android:text="Informacion Personal"
+        android:textColor="@color/negro"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        />
 
-
-        <TextView
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Email" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="44dp"
+    <TextView
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="5dp">
-
-        <ImageButton
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@android:color/transparent"
-            android:scaleType="fitCenter"
-            android:src="@drawable/historial" />
-
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_gravity="center"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-
+        android:text="Nombre"
+        android:textColor="@color/negro"
+        android:textSize="18dp" />
+    <TextView
+        android:textAlignment="center"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:text="E-mail"
+        android:textColor="@color/negro"
+        android:textSize="18dp" />
+    <TextView
+        android:textAlignment="center"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:text="Celular"
+        android:textColor="@color/negro"
+        android:textSize="18dp" />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
     <FrameLayout
         android:id="@+id/contenedorFragmentoPadre"
         android:layout_width="match_parent"
