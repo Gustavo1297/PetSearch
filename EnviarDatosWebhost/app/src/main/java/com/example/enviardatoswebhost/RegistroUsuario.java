@@ -48,7 +48,20 @@ public class RegistroUsuario extends AppCompatActivity {
         btnRegistro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    EnviarUsuario("https://pulsatile-cells.000webhostapp.com/Login_Insert.php");
+                if (!editName.getText().toString().isEmpty()
+                        && !editEmail.getText().toString().isEmpty()
+                        && !editPhone.getText().toString().isEmpty()
+                        && !editUser.getText().toString().isEmpty()
+                        && !editPassword.getText().toString().isEmpty()
+                        && !editPassword2.getText().toString().isEmpty() ){
+                    if (editPassword.getText().equals(editPassword2.getText())){
+                        EnviarUsuario("https://pulsatile-cells.000webhostapp.com/Login_Insert.php");
+                    }else{
+                        Toast.makeText(getApplicationContext(), "Contraseñas no coinciden", Toast.LENGTH_SHORT).show();
+                    }
+                }else{
+                    Toast.makeText(getApplicationContext(), "Tienes campos vacios", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

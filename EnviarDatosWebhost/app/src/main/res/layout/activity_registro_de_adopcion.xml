@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegistroAdopcion"
     android:orientation="vertical"
+    tools:context=".RegistroDeAdopcion"
     >
     <LinearLayout
         android:layout_width="match_parent"
@@ -64,13 +64,22 @@
             <ToggleButton
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center_horizontal"
-                android:id="@+id/esUnPerroGato"
+                android:id="@+id/tgbtnMascota"
                 android:layout_width="180dp"
                 android:layout_height="30dp"
                 android:text="ToggleButton"
                 android:textOn="Gato"
                 android:textOff="Perro"
                 android:background="@color/verde"/>
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/textMascota"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:textColor="@color/negro"
+                android:textSize="15dp"
+                android:layout_margin="5dp"
+                android:textStyle="bold"/>
             />
 
         </LinearLayout>
@@ -93,54 +102,63 @@
         <EditText
             android:layout_marginLeft="10dp"
             android:id="@+id/raza"
-            android:hint="Raza si es Perro"
             android:layout_width="230dp"
             android:layout_height="wrap_content" />
     </LinearLayout>
+
     <LinearLayout
-        android:layout_width="350dp"
+        android:layout_width="394dp"
         android:layout_height="50dp"
-        android:layout_marginTop="5dp"
         android:layout_marginLeft="10dp"
-        >
+        android:layout_marginTop="5dp">
+
         <TextView
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/negro"
-            android:text="Edad: "
-            android:textSize="15dp"
             android:layout_margin="5dp"
-            android:textStyle="bold"/>
+            android:text="Edad: "
+            android:textColor="@color/negro"
+            android:textSize="15dp"
+            android:textStyle="bold" />
 
         <SeekBar
             android:id="@+id/seekBarEdad"
             style="@style/Widget.AppCompat.SeekBar"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:layout_marginLeft="5dp"
             android:max="20"
-            android:layout_margin="5dp"
             android:progress="0"
             android:text="Años" />
+
         <TextView
-            android:id="@+id/txtEdad"
+            android:id="@+id/textEdad"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:textStyle="bold"
             android:textColor="@color/negro"
-            />
+            android:textStyle="bold" />
+
         <ToggleButton
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center_horizontal"
-            android:id="@+id/btnEdad"
+            android:id="@+id/tgbtnEdad"
             android:layout_width="70dp"
             android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/verde"
             android:text="ToggleButton"
-            android:textOn="Año"
             android:textOff="Meses"
-            android:background="@color/verde"/>
+            android:textOn="Año" />
+        <TextView
+            android:id="@+id/textAM"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="@color/negro"
+            android:textSize="15dp"
+            android:layout_margin="5dp"
+            android:textStyle="bold"/>
         />
     </LinearLayout>
     <LinearLayout
@@ -185,13 +203,21 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="20dp"
             android:layout_gravity="center_horizontal"
-            android:id="@+id/btnVacunas"
+            android:id="@+id/tgbtnVacunas"
             android:layout_width="150dp"
             android:layout_height="30dp"
             android:text="ToggleButton"
             android:textOn="Si"
             android:textOff="No"
             android:background="@color/verde"/>
+        <TextView
+            android:id="@+id/textvacuna"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="@color/negro"
+            android:textSize="15dp"
+            android:layout_margin="5dp"
+            android:textStyle="bold"/>
 
     </LinearLayout>
     <LinearLayout
@@ -213,13 +239,21 @@
             android:layout_marginLeft="19dp"
             android:layout_marginTop="20dp"
             android:layout_gravity="center_horizontal"
-            android:id="@+id/btnDueños"
+            android:id="@+id/tgbtnDueños"
             android:layout_width="150dp"
             android:layout_height="30dp"
             android:text="ToggleButton"
             android:textOn="Desconocido"
             android:textOff="Unico"
             android:background="@color/verde"/>
+        <TextView
+            android:id="@+id/textDueño"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="@color/negro"
+            android:textSize="15dp"
+            android:layout_margin="5dp"
+            android:textStyle="bold"/>
 
     </LinearLayout>
 

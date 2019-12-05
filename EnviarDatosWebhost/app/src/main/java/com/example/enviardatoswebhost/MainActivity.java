@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.StrictMode;
-import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -38,32 +37,35 @@ public class MainActivity extends AppCompatActivity {
     Button btnIniciarSesion;
     TextView textRegistro;
     EditText user, password;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btnIniciarSesion = (Button) findViewById(R.id.btnInicio);
+        btnIniciarSesion = (Button) findViewById(R.id.btnLogin);
         textRegistro = (TextView) findViewById(R.id.textRegistro);
         user = (EditText) findViewById(R.id.editUserLog);
         password = (EditText) findViewById(R.id.editPasswordLog);
 
+    }
 
-        }
-    public void RegistroUsuario(View view){
+    public void RegistroUsuario(View view) {
         Intent registrousuario = new Intent(this, RegistroUsuario.class);
         startActivity(registrousuario);
 
     }
-    public void Login(View view){
-        if(!user.getText().toString().isEmpty() && !password.getText().toString().isEmpty()){
-            Intent intentmenu = new Intent(this, Menu.class);
-            startActivity(intentmenu);
 
-        }else{
-            Toast.makeText(getApplicationContext(), "Usuario/Contraseña Vacios", Toast.LENGTH_SHORT).show();}
+    public void Login(View view) {
+        if (!user.getText().toString().isEmpty() && !password.getText().toString().isEmpty()) {
+            Intent registrousuario = new Intent(this, Menu.class);
+            startActivity(registrousuario);
+        } else {
+            Toast.makeText(getApplicationContext(), "Usuario/Contraseña Vacios", Toast.LENGTH_SHORT).show();
         }
-
     }
+}
+
+
 
 
 
